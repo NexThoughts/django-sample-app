@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+        <link rel="stylesheet" type="text/css" href=" {% static "assets/css/default.css" %}">
+
+</head>
+<body>
+    <div id="page">
+        <div id="sidebar">
+            {% block sidebar %}
+            <ul>
+                <li><a href="/articles/all">Articles</a> </li>
+                <li><a href="/admin/">Admin</a></li>
+            </ul>
+            {% endblock %}
+        </div>
+        <div id="content">
+            {% block content %}This is the content area{% endblock %}
+            <!-- <img src="hello.jpg" height="100" width="100" alt="no">
+            <img src = "{% static "assets/images/logo.jpg" %}" >
+        </div>
+    </div>
+</body>
+</html>
