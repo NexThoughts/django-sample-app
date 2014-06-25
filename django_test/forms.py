@@ -12,7 +12,7 @@ class MyRegistrationForm(UserCreationForm):
     def save(self, commit=True):
         user = super(UserCreationForm, self).save(commit=False)
         user.email = self.cleaned_data['email']
-
+        user.is_active = False
         if commit:
             user.save()
 

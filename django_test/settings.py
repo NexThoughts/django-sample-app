@@ -92,3 +92,9 @@ TEMPLATE_DIRS = [
     os.path.join(BASE_DIR, os.path.join('articles','templates')),
     os.path.join(BASE_DIR, 'templates'),
 ]
+
+EMAIL_USE_TSL = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'abhilashjha@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_PORT = 465
