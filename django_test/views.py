@@ -6,7 +6,6 @@ from forms import MyRegistrationForm
 from django.core.mail import send_mail
 from django.conf import settings
 
-
 def login(request):
     c={}
     c.update(csrf(request))
@@ -48,5 +47,5 @@ def register_user(request):
     return render_to_response('register.html', args)
 
 def register_success(request):
-    send_mail('Noreply', 'welcome sir', settings.EMAIL_HOST_USER, [settings.EMAIL_HOST_USER], fail_silently=False)
+    #send_mail('Noreply', 'welcome sir', settings.EMAIL_HOST_USER, [settings.EMAIL_HOST_USER], fail_silently=False)
     return render_to_response('register_success.html')

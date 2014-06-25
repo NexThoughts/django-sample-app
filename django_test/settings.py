@@ -96,5 +96,5 @@ TEMPLATE_DIRS = [
 EMAIL_USE_TSL = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'abhilashjha@gmail.com'
-EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_HOST_PASSWORD = 'myfrndaditi'
 EMAIL_PORT = 465
